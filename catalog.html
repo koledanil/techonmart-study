@@ -13,16 +13,16 @@
                         <a href="#" class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
                     </li>
                     <li class="item">
-                        <button class="search-btn"><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</button>
+                        <button class="search-btn" type="button"><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</button>
                     </li>
                     <li class="item">
-                        <button class="bookmark-btn"><img src="img/bookmark-icn.svg" alt="Иконка закладки" class="bookmark-icn">Закладки</button>
+                        <button class="bookmark-btn" type="button"><img src="img/bookmark-icn.svg" alt="Иконка закладки" class="bookmark-icn">Закладки</button>
                     </li>
                     <li class="item">
                         <a href="#" class="cart-btn"><img src="img/cart-icn.svg" alt="Иконка корзина" class="cart-icn">10 товаров</a>
                     </li>
                     <li class="item">
-                        <button class="order-btn">Оформить заказ</button>
+                        <button class="order-btn" type="button">Оформить заказ</button>
                     </li>
                 </ul>
 
@@ -30,7 +30,7 @@
                     <h1 class="main-title">Строительные материалы и инструменты от производителя</h1>
                     <ul class="contacts-short">
                         <li>
-                            <button class="phone-btn">
+                            <button class="phone-btn" type="button">
                                 <img src="img/tel-icn.svg" alt="Иконка телефона" class="phone-icon"> +7 812 555-05-55
                             </button>
                         </li>
@@ -39,7 +39,7 @@
                     <ul class="user-navigation">
                         <li>
                             <a href="#" class="account-link"><img src="img/user-icn.svg" alt="Иконка пользователя">Жорж Солряка</a>
-                            <button><img src="img/logout-icn.svg" alt="Иконка выхода"><span class="visually-hidden">Выйти</span></button>
+                            <button type="button"><img src="img/logout-icn.svg" alt="Иконка выхода"><span class="visually-hidden">Выйти</span></button>
                         </li>
                         <li><a href="" class="user-link">Мои заказы</a></li>
                         <li><a href="" class="user-link">Личный кабинет</a></li>
@@ -88,36 +88,43 @@
 
         </ul>
     </div>
-    
     <h1 class="h1-title">Перофраторы</h1>
    
     <section class="filters">
        <h2 class="title-filter">Фильтры</h2>
     <form action="#" method="get">
         <fieldset>
-            <legend>По цене</legend>
-            <input type="checkbox" name="bosh" id="bosh-id">
-            <label for="bosh-id">Bosh <span>(3)</span></label>
+            <legend>По производителю</legend>
 
-            <input type="checkbox" name="interscol" id="interscol-id">
-            <label for="interscol-id">Интерскол <span>(13)</span></label>
-
-            <input type="checkbox" name="makita" id="makita-id">
-            <label for="makita-id">Makita <span>(19)</span></label>
-            
-            <input type="checkbox" name="dewalt" id="dewalt-id">
-            <label for="dewalt-id">DeWalt <span>(11)</span></label>
-
-            <input type="checkbox" name="makita" id="hitachi-id">
-            <label for="hitachi-id">Hitachi <span>(2)</span></label>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="bosh">Bosh (2)</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="bosh" checked>Интерскол (15)</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="bosh">Makita (8)</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="bosh" checked>Hitachi (15)</label>
+                </li>
+            </ul>
         </fieldset>
      
         <fieldset>
             <legend>По типу питания</legend>
-            <input type="radio" name="battery" id="battery-id">
-            <label for="battery-id">Аккумулятор</label>
-            <input type="radio" name="battery" id="charge-id">
-            <label for="charge-id">От сети</label>
+            <ul>
+                <li>
+                    <label><input type="radio" name="power" checked>Все (13)</label>
+                </li>
+                <li> 
+                    <label><input type="radio" name="power">Аккумулятор (3)</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="power"> От сети (10)</label>
+                </li>
+            </ul>
         </fieldset>
         <button type="submit">Показать</button>
     </form>
@@ -143,7 +150,7 @@
     <ul class="catalog-list">
         <li class="item">
             <a href="#">
-                <img src="img/prf/p4.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/9.jpg" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional Heavy Duty GBH 12-52 D</h3>
                 <p class="sale">35000 ₽</p>
             </a>
@@ -152,7 +159,7 @@
 
         <li class="item">
             <a href="#">
-                <img src="img/prf/p4.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/1.jpg" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional GBH 3-28 DRE</h3>
                 <p class="sale">63500 ₽</p>
             </a>
@@ -161,7 +168,7 @@
 
         <li class="item">
             <a href="#">
-                <img src="img/prf/p4.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/3.jpg" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch GBH 180-LI + GBA 18 В 4.0 Ач + GAL 18V-40</h3>
                 <p class="sale"></p>
             </a>
@@ -170,7 +177,7 @@
 
         <li class="item">
             <a href="#">
-                <img src="img/prf/p4.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/4.jpg" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional GBH 2-24 DRE</h3>
                 <p class="sale"></p>
             </a>
@@ -259,19 +266,57 @@
         </li>
 
 <ul class="pagination-list">
-    <li class="item active"><a>1</a></li>
-    <li class="item"><a href="#">2</a></li>
-    <li class="item"><a href="#">3</a></li>
-    <li class="next"><a href="">Следующая</a></li>
-
+    <li class="item active"><a>1 <span class="visually-hidden">страница</span></a></li>
+    <li class="item"><a href="#">2 <span class="visually-hidden">страница</span><</a></li>
+    <li class="item"><a href="#">3 <span class="visually-hidden">страница</span><</a></li>
+    <li class="next"><a>Следующая <span class="visually-hidden">страница</span><</a></li>
 </ul>
-
-
-    </ul>
 </section>
 
 
-</main>
 
+<footer>
+    <div>
+        <img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo">
+        <ul class="footer-nav">
+            <li class="item">
+                <a href="#" class="nav-link">Компания</a>
+                <a href="#" class="nav-link">Новости</a>
+                <a href="#" class="nav-link">Каталог</a>
+                <a href="#" class="nav-link">Доставка</a>
+                <a href="#" class="nav-link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <ul class="footer-special">
+            <li class="item">
+                <a href="#" class="nav-link">Материалы</a>
+                <a href="#" class="nav-link">Техника</a>
+                <a href="#" class="nav-link">Инструмент</a>
+                <a href="#" class="nav-link">Спецпредложения</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p>© 2010–2019 Компания «Техномарт», все права защищены</p>
+        <ul class="social">
+            <li>
+                <img src="img/social/vk.svg" alt="Иконка твиттера" aria-label="Техномарт в твиттере"></li>
+            <li>
+                <img src="img/social/gram.svg" alt="Иконка инстаграма" aria-label="Техномарт в инстаграме"></li>
+            <li>
+                <img src="img/social/fb.svg" alt="Иконка фейсбука" aria-label="Техномарт в фейсбуке"></li>
+        </ul>
+
+        <ul class="credentials">
+            <li>Вопросы, пожелания, комментарии <a href="mailto:koledanil@gmail.com">koledanil@gmail.com</a>
+            <li>Разработка и поддержка <a href="#">htmlacademy</a></li>
+        </ul>
+    </div>
+    </footer>
+</main>
     </body>
 </html>
