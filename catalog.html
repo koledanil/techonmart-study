@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Строительные материалы от Техномарта</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="norm.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -13,40 +16,34 @@
                         <a href="#" class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
                     </li>
                     <li class="item">
-                        <button class="search-btn" type="button"><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</button>
+                        <a href="#" class="nav-link" ><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</a>
                     </li>
                     <li class="item">
-                        <button class="bookmark-btn" type="button"><img src="img/bookmark-icn.svg" alt="Иконка закладки" class="bookmark-icn">Закладки</button>
+                        <a href="#" class="nav-link"><img src="img/bookmark-icn.svg" alt="Иконка закладки" class="bookmark-icn">Закладки</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="cart-btn"><img src="img/cart-icn.svg" alt="Иконка корзина" class="cart-icn">10 товаров</a>
+                        <a href="#" class="nav-link"><img src="img/cart-icn.svg" alt="Иконка корзина" class="cart-icn">Корзина</a>
                     </li>
                     <li class="item">
-                        <button class="order-btn" type="button">Оформить заказ</button>
+                        <a href="#"  class="quick-order nav-link">Оформить заказ</a>
                     </li>
                 </ul>
 
                 <div class="middle-navigation">
-                    <h1 class="main-title">Строительные материалы и инструменты от производителя</h1>
+                    <h1 class="main-title h1-title">Строительные материалы и инструменты от производителя</h1>
                     <ul class="contacts-short">
                         <li>
-                            <button class="phone-btn" type="button">
+                            <a class="phone-link">
                                 <img src="img/tel-icn.svg" alt="Иконка телефона" class="phone-icon"> +7 812 555-05-55
-                            </button>
+                            </a>
                         </li>
                         <li class="address-xs">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
                     </ul>
-                    <ul class="user-navigation">
-                        <li>
-                            <a href="#" class="account-link"><img src="img/user-icn.svg" alt="Иконка пользователя">Жорж Солряка</a>
-                            <button type="button"><img src="img/logout-icn.svg" alt="Иконка выхода"><span class="visually-hidden">Выйти</span></button>
-                        </li>
-                        <li><a href="" class="user-link">Мои заказы</a></li>
-                        <li><a href="" class="user-link">Личный кабинет</a></li>
+                    <ul class="user-navigation registred-user">
+                        <li><a href="#" class="account-link nav-link"><img src="img/icon-user.svg" alt="Иконка авторизованный пользователь">Жорж Соляра<img src="img/logout-icn.svg" alt="Иконка выход"></a></li>
                     </ul>
                 </div>
-             
-
+                
                 <ul class="site-navigation">
                     <li class="item">
                         <a href="#" class="nav-link">Главная</a>
@@ -55,7 +52,7 @@
                         <a href="#" class="nav-link">Компания</a>
                         </li>
                     <li class="item">
-                        <a href="department.html" class="nav-link">Материалы, иструменты и техника</a>
+                        <a href="catalog.html" class="nav-link">Материалы, иструменты и техника</a>
                     </li>
                     <li class="item">
                         <a href="#" class="nav-link">Новости</a>
@@ -88,7 +85,7 @@
 
         </ul>
     </div>
-    <h1 class="h1-title">Перофраторы</h1>
+    <h2 class="h2-title fav-title-wrapper catalog-title">Перофраторы</h2>
    
     <section class="filters">
        <h2 class="title-filter">Фильтры</h2>
@@ -122,11 +119,11 @@
                     <label><input type="radio" name="power">Аккумулятор (3)</label>
                 </li>
                 <li>
-                    <label><input type="radio" name="power"> От сети (10)</label>
+                    <label><input type="radio" name="power">От сети (10)</label>
                 </li>
             </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="cta-main filter-outline" type="submit">Показать</button>
     </form>
 </section>
 <section class="sorted-by">
@@ -135,12 +132,16 @@
         <li class="item"><a href="#">цене</a></li>
         <li class="item"><a href="#">типу</a></li>
         <li class="item"><a href="#">функционалу</a></li>
-        <li class="item-icon">
-            <a href="#"><img src="img/down-icn.svg" alt="Иконка вверх"></a>
-            <span class="visually-hiiden">От дешевых к дорогим</span></li>
-        <li class="item-icon">
-            <a href="#"><img src="img/down-icn.svg" alt="Иконка вниз"></a>
-            <span class="visually-hiiden">От дорогих к дешевым</span></li>
+        <li class="item-icon-up">
+            <a href="#">
+<!-- Иконки -->
+            </a>
+            <span class="visually-hidden">От дешевых к дорогим</span></li>
+        <li class="item-icon-down">
+            <a href="#">
+<!-- Иконки -->
+            </a>
+            <span class="visually-hidden">От дорогих к дешевым</span></li>
     </ul>
 </section>
 
@@ -150,158 +151,181 @@
     <ul class="catalog-list">
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/9.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/9.jpg" width="80%" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional Heavy Duty GBH 12-52 D</h3>
                 <p class="sale">35000 ₽</p>
             </a>
-                <a href="#" class="buy-btn">25000 ₽</a>
+                <a href="#" class="cta-main no-round-corner triangle">25000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/1.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/1.jpg" width="80%" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional GBH 3-28 DRE</h3>
                 <p class="sale">63500 ₽</p>
             </a>
-                <a href="#" class="buy-btn">45000 ₽</a>
+                <a href="#" class="cta-main triangle">45000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/3.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/3.jpg" width="80%" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch GBH 180-LI + GBA 18 В 4.0 Ач + GAL 18V-40</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">78000 ₽</a>
+                <a href="#" class="cta-main triangle">78000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/4.jpg" alt="Перфоратор BOSCH BFG 100">
+                <img src="img/catalog-img/4.jpg" width="80%" alt="Перфоратор BOSCH BFG 100">
                 <h3 class="goods-title">Bosch Professional GBH 2-24 DRE</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">18000 ₽</a>
+                <a href="#" class="cta-main triangle">18000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/1.jpg" alt="Изображение перфоратора BOSCH BFG 100-90">
+                <img src="img/catalog-img/1.jpg" width="80%" alt="Изображение перфоратора BOSCH BFG 100-90">
                 <h3 class="goods-title">BOSCH BFG 100-90</h3>
                 <p class="sale">25000 ₽</p>
             </a>
-                <a href="#" class="buy-btn">14000 ₽</a>
+                <a href="#" class="cta-main triangle">14000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/2.jpg" alt="Изображение перфоратора Bosch Professional GBH 2-24">
+                <img src="img/catalog-img/2.jpg" width="80%" alt="Изображение перфоратора Bosch Professional GBH 2-24">
                 <h3 class="goods-title">Bosch Professional GBH 2-24</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">8000 ₽</a>
+                <a href="#" class="cta-main triangle">8000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/3.jpg" alt="Изображение перфората Bosch Professional GBH 3900">
+                <img src="img/catalog-img/3.jpg" width="80%" alt="Изображение перфората Bosch Professional GBH 3900">
                 <h3 class="goods-title">Bosch Professional GBH 3900</h3>
                 <p class="sale">21300 ₽</p>
             </a>
-                <a href="#" class="buy-btn">17000 ₽</a>
+                <a href="#" class="cta-main triangle">17000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/4.jpg" alt="Изображение перфоратора Bosch GBH 2-28 Professional">
+                <img src="img/catalog-img/4.jpg" width="80%" alt="Изображение перфоратора Bosch GBH 2-28 Professional">
                 <h3 class="goods-title">Bosch GBH 2-28 Professional</h3>
                 <p class="sale">17000 ₽</p>
             </a>
-                <a href="#" class="buy-btn">12000 ₽</a>
+                <a href="#" class="cta-main triangle">12000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/5.jpg" alt="Изображение перфоратора BOSCH RPDMN 100">
+                <img src="img/catalog-img/5.jpg" width="80%" alt="Изображение перфоратора BOSCH RPDMN 100">
                 <h3 class="goods-title">BOSCH RPDMN 100</h3>
                 <p class="sale">18000 ₽</p>
             </a>
-                <a href="#" class="buy-btn">15000 ₽</a>
+                <a href="#" class="cta-main triangle">15000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/6.jpg" alt="Изображение перфората BOSCH MEDIUM HR2470">
-                <h3 class="goods-title">BOSCH MEDIUM HR2470</h3>
+                <img src="img/catalog-img/6.jpg" width="80%" alt="Изображение перфората BOSCH MEDIUM HR2470">
+                <h3 class="goods-title">BBosch GBH200 Pro</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">20100 ₽</a>
+                <a href="#" class="cta-main triangle">20100 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/7.jpg" alt="Изобаржение перфоратора BOSCH Professional 3-28">
+                <img src="img/catalog-img/7.jpg" width="80%" alt="Изобаржение перфоратора BOSCH Professional 3-28">
                 <h3 class="goods-title">BOSCH Professional 3-28</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">10500 ₽</a>
+                <a href="#" class="cta-main triangle">10500 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/8.jpg" alt="Изобаржение перфоратора Bosch GBH Hardcore 5-40 D">
+                <img src="img/catalog-img/8.jpg" width="80%" alt="Изобаржение перфоратора Bosch GBH Hardcore 5-40 D">
                 <h3 class="goods-title">Bosch GBH Hardcore 5-40 D</h3>
                 <p class="sale">25000 ₽</p>
             </a>
-                <a href="#" class="buy-btn">20000 ₽</a>
+                <a href="#" class="cta-main triangle">20000 ₽</a>
         </li>
 
         <li class="item">
             <a href="#">
-                <img src="img/catalog-img/9.jpg" alt="Изображение перфоратора BOSCH BFG Alegro 2000">
+                <img src="img/catalog-img/9.jpg" width="80%" alt="Изображение перфоратора BOSCH BFG Alegro 2000">
                 <h3 class="goods-title">BOSCH BFG Alegro 2000</h3>
                 <p class="sale"></p>
             </a>
-                <a href="#" class="buy-btn">45500 ₽</a>
+                <a href="#" class="cta-main triangle">45500 ₽</a>
         </li>
 
 <ul class="pagination-list">
     <li class="item active"><a>1 <span class="visually-hidden">страница</span></a></li>
-    <li class="item"><a href="#">2 <span class="visually-hidden">страница</span><</a></li>
-    <li class="item"><a href="#">3 <span class="visually-hidden">страница</span><</a></li>
-    <li class="next"><a>Следующая <span class="visually-hidden">страница</span><</a></li>
+    <li class="item"><a href="#">2 <span class="visually-hidden">страница</span></a></li>
+    <li class="item"><a href="#">3 <span class="visually-hidden">страница</span></a></li>
+    <li class="next"><a>Следующая <span class="visually-hidden">страница</span></a></li>
 </ul>
+</section>
+
+<section class="seo-wrap">
+    <h2 class="h2-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 </section>
 
 
 
 <footer>
-    <div>
+    <div class="lvl-1">
+        <div>
         <img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo">
         <ul class="footer-nav">
             <li class="item">
                 <a href="#" class="nav-link">Компания</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Новости</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Каталог</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Доставка</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Контакты</a>
             </li>
         </ul>
     </div>
     <div>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul class="footer-special">
             <li class="item">
                 <a href="#" class="nav-link">Материалы</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Техника</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Инструмент</a>
+            </li>
+            <li class="item">
                 <a href="#" class="nav-link">Спецпредложения</a>
             </li>
         </ul>
     </div>
-
-    <div>
-        <p>© 2010–2019 Компания «Техномарт», все права защищены</p>
+</div>
+  <div class="lvl-2">
+        <p>© 2010–2019 Компания «Техномарт»</p>
+        <p>Все права защищены</p>
         <ul class="social">
             <li>
                 <img src="img/social/vk.svg" alt="Иконка твиттера" aria-label="Техномарт в твиттере"></li>

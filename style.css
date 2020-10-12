@@ -2,13 +2,23 @@ body {
     margin: 0px;
     padding: 0px;
 
-    font-family: 'Cuprum', sans-serif;
+    
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: .3px;
     color: black;
     background-color: white;
+}
+
+h1,h2,h3 {
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 700;
+}
+
+nav, footer {
+    font-family: 'Cuprum', sans-serif;
 }
 
 
@@ -154,7 +164,7 @@ font-family: 'PT Sans', sans-serif; */
     background-repeat: no-repeat;
 }
 
-.sale {
+.tools .sale {
     background-color: #8ED78F;
     background-image: url('img/promo-icn/icon-4.svg');
     background-repeat: no-repeat;
@@ -233,6 +243,7 @@ font-family: 'PT Sans', sans-serif; */
     padding: 0px;
 
     line-height: 24px;
+    position: relative;
     display: inline-block;
     font-family: 'Cuprum', sans-serif;
     font-weight: 400;
@@ -249,10 +260,24 @@ font-family: 'PT Sans', sans-serif; */
     text-decoration-line: none;
 }
 
+.triangle.cta-main::after {
+    content: "";
+    position: absolute;
+    right: -40px; 
+    top: 0px;
+    border: 20px solid transparent;
+    border-left: 20px solid #EE3643;
+}
+
+.cta-main {
+    border-radius: 2px 0px 0px 2px;
+}
+
 
 /* Заголовок популярные товары и производители */
 .fav-title-wrapper {
-    background-color: #F4E8DA;
+    background-color: #F9F5F0;
+    height: 88px;
 }
 
 .title-goods {
@@ -287,6 +312,7 @@ font-family: 'PT Sans', sans-serif; */
     margin: 0px;
     padding: 0px;
 
+    font-family: 'PT Sans', sans-serif;
     color: black;
     text-align: center;
 }
@@ -321,19 +347,273 @@ font-family: 'PT Sans', sans-serif; */
 
 
 /* Преимущества */
+.services {
+    background-color: #F5F8FA;
+}
+
+.h2-services, .services-title {
+    text-transform: uppercase;
+}
+
+.slide-list{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.slide-list .item {
+    margin: 0px;
+    padding: 0px;
+    height: 56px;
+    background-color: #32425C;
+
+}
+
+.slide-list a {
+    margin: 0px;
+    padding: 0px;
+
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+}
+
+.slide-list .active-slide-list {
+    background-color: white;
+    color: #32425C;
+}
+
+.active-slide-list a{
+    color: #32425C;
+}
+
+/* О компании */
+.about-title {
+    text-transform: uppercase;
+}
+
+.about-company-list {
+    list-style-type: none;
+}
+
+/* ФУТЕР */
+/* Первый уровнь */
+
+.lvl-1 {
+    margin: 0px;
+    padding: 0px;
+    background-color: #32425C;
+}
+
+.footer-special, .footer-nav {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-special .item {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-nav .item {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-address {
+    color: white;
+}
+
+.footer-special .nav-link {
+color: #FFD180;
+}
+
+/* Второй уровнь */
+.lvl-2 {
+    margin: 0px;
+    padding: 0px;
+    background-color: #293449;
+}
+
+.lvl-2 p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.lvl-2 .social {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.credentials {
+    margin: 0px;
+    padding: 0px;
+}
+
+.credentials li {
+    color: white;
+}
+
+.credentials a {
+    text-decoration: none;
+    color: #FFD180;
+}
 
 
+/* ++++ КАТАЛОГ ++++ */
+.main {
+    margin: 0px;
+    padding: 0px;
+}
+/* Крошки */
+.breadcumbs ul{
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type:  none;
+}
+
+.breadcumbs a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.filters {
+    margin: 0px;
+    padding: 0px;
+    background-color: #34A8CB;
+}
+
+/* Фильтры */
+.filters ul{
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type: none;
+}
+
+.filters fieldset {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.filters legend {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title-filter {
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 40px;
+    background-color: #F7F3EC;
+}
+
+.catalog-title {
+    background-color: #F2F6F8;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.filters .filter-outline {
+    background-color: white;
+    color: inherit;
+    border: 1px solid #E5E5E5;
+}
+
+/* Сортировка */
+.sorted-by {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #F7F3EC;
+}
+
+.sorted-by p {
+    margin: 0px;
+    padding: 0px;
+    
+    text-transform: uppercase;
+}
+
+.sorted-by ul {
+    list-style-type: none;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.sort-list a {
+    color: #ACA9A4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sort-list .item a{
+    border-bottom: 1px dashed #EE3643;
+}
 
 
+/* Карточка товара */
+.catalog-list {
+    margin: 0px;
+    padding: 0px;
+    
+    list-style-type: none;
+}
 
+.catalog-list a{
+    text-decoration: none;
+}
 
+.catalog-list .sale {
+    color: #999999;
+    text-decoration: line-through;
+}
 
+.catalog-list .item {
+    margin: 0px;
+    padding: 0px;
+    width: 220px;
+    border: 1px solid #D7D7D7;
+}
 
+/* Пагинация */
+.pagination-list {
+    margin: 0px;
+    padding: 0px;
+}
 
+.pagination-list .item{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+}
 
+.pagination-list .next{
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #D7D7D7;
+    border-radius: 2px;
+}
 
+/* Seo_Text */
+.seo-wrap {
+    font-family: 'PT Sans', sans-serif; 
+    background-color: #F2F6F8;
+}
 
-
+.seo-wrap p {
+    margin: 0px;
+    padding: 0px;
+}
 
 /* Вспомогательные классы */
 .visually-hidden {
