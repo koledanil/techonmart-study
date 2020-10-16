@@ -18,6 +18,10 @@ h1,h2,h3 {
     font-weight: 700;
 }
 
+.h2-title {
+    font-size: 32px;
+}
+
 nav, footer {
     font-family: 'Cuprum', sans-serif;
 }
@@ -27,6 +31,7 @@ nav, footer {
 font-family: 'PT Sans', sans-serif; */
 
 
+
 .top-menu-wrapper {
     background-color: #32425C;
 }
@@ -34,7 +39,7 @@ font-family: 'PT Sans', sans-serif; */
 .main-menu {
     margin: 0px;
     padding: 0px;
-    background-color: #F3F7F8;
+    background-color: #edf3f5;
 }
 
 /* Стили первого уровня меню additional-navigation*/
@@ -211,7 +216,6 @@ font-family: 'PT Sans', sans-serif; */
 
 
 /* Стили последнего блока меню */
-
 .site-navigation {
     margin: 0px;
     padding: 0px;
@@ -252,6 +256,7 @@ font-family: 'PT Sans', sans-serif; */
     display: flex;
     flex-wrap: wrap;
     
+    margin-bottom: 56px;
 }
 
 .promo a {
@@ -322,8 +327,6 @@ font-family: 'PT Sans', sans-serif; */
 
     box-sizing: border-box;
 }
-
-
 
 .delivery {
     background-color: #FFC047;
@@ -513,7 +516,7 @@ font-family: 'PT Sans', sans-serif; */
     text-decoration-line: none;
 }
 
-.triangle.cta-main::after {
+.triangle.cta-main-rounded::after {
     content: "";
     position: absolute;
     right: -40px; 
@@ -522,15 +525,36 @@ font-family: 'PT Sans', sans-serif; */
     border-left: 20px solid #EE3643;
 }
 
-.cta-main {
+.triangle{
     border-radius: 2px 0px 0px 2px;
+    padding-left: 32px;
+    padding-right: 16px;
 }
 
 
 /* Заголовок популярные товары и производители */
+.favourite-goods {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: auto;
+    width: 940px;
+}
+
 .fav-title-wrapper {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     background-color: #F9F5F0;
-    height: 88px;
+
+    margin-bottom: 24px;
 }
 
 .title-goods {
@@ -539,25 +563,61 @@ font-family: 'PT Sans', sans-serif; */
     text-transform: uppercase;
 }
 
-
 /* Карточка товара */
 .favourite-list {
     display: flex;
+    width: 940px;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px;
-    
+
     list-style-type: none;
+
+    margin-bottom: 24px;
 }
 
 .favourite-list .item{
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
 
     border: 1px solid #D7D7D7;
     width: 220px;
+    height: 332px;   
 }
 
-.favourite-list .item a{
+.card-image-wrap {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    /* background-color: khaki; */
+
+    width: 186px;
+    height: 148px;
+    padding: 12px;
+}
+
+.card-image-wrap img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.card-link{
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    flex-wrap: wrap;
     text-decoration: none;
 }
 
@@ -568,36 +628,76 @@ font-family: 'PT Sans', sans-serif; */
     font-family: 'PT Sans', sans-serif;
     color: black;
     text-align: center;
+    width: 100%;
+
+    margin-bottom: 8px;
 }
 
 .sale-price {
     margin: 0px;
     padding: 0px;
-
+    width: 100%;
     color: #A9A9A9;
+    font-weight: 700;
     text-decoration-line: line-through;
     text-align: center;
+    margin-bottom: 4px;
 }
 
+.card-price-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    align-items: center;
+    box-sizing: border-box;
+
+    height: 164px;
+    padding-bottom: 24px;
+}
+
+.product-tag-title {
+    display: block;
+    width: 100%;
+    color: black;
+    margin: 0px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*  ТУТ */
 /* Список производителей */
 .producers {
     margin: 0px;
     padding: 0px;
+    width: 940px;
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 300px;
 }
 
 .producers li {
     margin: 0px;
     padding: 0px; 
-
     list-style-type: none;
-    width: 220px;
-    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    width: 218px;
+    height: 138px;
     border: 1px solid #D7D7D7;
 }
 
+
+/* Удаляем марджины в последнем ряду */
+.producers li:nth-last-of-type(-n+4) { 
+    margin-bottom: 0px;
+}
 
 /* Преимущества */
 .services {
@@ -619,7 +719,6 @@ font-family: 'PT Sans', sans-serif; */
     padding: 0px;
     height: 56px;
     background-color: #32425C;
-
 }
 
 .slide-list a {
