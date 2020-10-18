@@ -94,10 +94,9 @@ font-family: 'PT Sans', sans-serif; */
     line-height: 42px;
 }
 
-
 .bookmark-order {
     padding-left: 24px;
-    padding-right: 0px;
+    padding-right: 24px;
     display: inline-block;
     line-height: 42px;
 
@@ -191,6 +190,8 @@ font-family: 'PT Sans', sans-serif; */
     padding: 0px;
     display: flex;
     list-style-type: none;
+
+    width: 300 px;
 }
 
 .user-navigation a {
@@ -200,7 +201,7 @@ font-family: 'PT Sans', sans-serif; */
 
     line-height: 42px;
     padding-left: 24px;
-    padding-right: 24px;
+    padding-right: 16px;
     background-color: white;
     color: black;
 }
@@ -807,7 +808,6 @@ font-family: 'PT Sans', sans-serif; */
     color: #32425C;
 }
 
-/*  ТУТ */
 /* О компании */
 .about{
     display: flex;
@@ -1030,6 +1030,66 @@ font-family: 'PT Sans', sans-serif; */
     margin: 0px;
     padding: 0px;
 }
+
+/* Меню в каталоге */
+.cart-icon-full {
+    background-color: #EE3643;
+}
+
+.catalog-wrapper {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-wrapper li {
+   display: flex;
+}
+
+.second-link {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    list-style-type: none;
+    background-color: none;
+    justify-content: flex-start;
+}
+
+.second-link a{
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    position: relative;
+    color: #32425C;
+
+    padding-left: 24px;
+}
+
+.link-divider::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    position: absolute;
+    left: 110px;
+    top: 18px;
+
+    background-color:#32425C;
+}
+
+.logout-btn {
+    margin-left: 2px;
+    display: inline-block;
+    background:none;
+    border: none;
+    height: 42px;
+    width: 42px;
+    background-color: white;
+}
+
+
 /* Крошки */
 .breadcumbs ul{
     margin: 0px;
