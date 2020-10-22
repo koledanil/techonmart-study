@@ -359,7 +359,7 @@ font-family: 'PT Sans', sans-serif; */
     padding-left: 16px;
     padding-right: 16px;;
     text-transform: uppercase;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     font-size: 14px;
     letter-spacing: .80px;
 }
@@ -511,7 +511,7 @@ font-family: 'PT Sans', sans-serif; */
     padding-left: 32px;
     padding-right: 32px;
     background-color: #EE3643;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     border: none;
     text-decoration-line: none;
 }
@@ -526,7 +526,7 @@ font-family: 'PT Sans', sans-serif; */
 }
 
 .triangle{
-    border-radius: 2px 0px 0px 2px;
+    /* border-radius: 2px 0px 0px 2px; */
     padding-left: 32px;
     padding-right: 16px;
 }
@@ -581,7 +581,6 @@ font-family: 'PT Sans', sans-serif; */
     padding: 0px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     text-align: center;
     box-sizing: border-box;
 
@@ -1038,10 +1037,6 @@ font-family: 'PT Sans', sans-serif; */
 }
 
 /* Меню в каталоге */
-.cart-icon-full {
-    background-color: #EE3643;
-}
-
 .catalog-wrapper {
     margin: 0px;
     padding: 0px;
@@ -1216,6 +1211,130 @@ font-family: 'PT Sans', sans-serif; */
     background-color: #F7F3EC;
 }
 
+/* Фильтрация по цене */
+.price-wrapper {
+    margin: 0px;
+    padding: 0px;
+
+    border: none;
+}
+
+.range-filter {
+    width: 220px;
+}
+
+.range-controls {
+    height: 41px;
+    padding-top: 39px;
+  
+    background-color: #F7F3EC;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    position: relative;
+}
+
+
+.range-controls .scale {
+    height: 4px;
+  
+    background: #d7dcde;
+  }
+
+.range-controls .bar {
+    width: 70%;
+    height: 4px;
+  
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 29px;
+    left: 0;
+
+    width: 6px;
+    height: 6px;
+    padding: 0px;
+
+    border: 8px solid #fff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.price-controls {
+    position: relative;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+    justify-content: space-between; 
+  }
+
+.price-controls label {
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .price-controls input {
+    width: 72px;
+    padding: 8px 8px;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+
+    border: none;
+    background: #F7F3EC;
+
+    margin-bottom: 40px;
+  }
+
+  .max-price::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+
+    width: 220px;
+    height: 1px;
+    background-color:  #D7D7D7;
+    bottom: 16px;
+  }
+
+
+  .min-price::after {
+    content: "—";
+    top: 5px;
+    left: 102px;
+    
+    
+    position: absolute;
+
+  }
+
+  .max-price {
+    text-align: right;
+  }
+
+
+.range-controls .toggle-max {
+    left: 130px;
+}
+
+.range-controls .toggle-min {
+    left: 10px;
+}
+
+
 .producers-list {
     line-height: 40px;
 }
@@ -1238,7 +1357,6 @@ font-family: 'PT Sans', sans-serif; */
     background-color:  #D7D7D7;
     bottom: 16px;
 }
-
 
 .producers-list label::before {
     content: "";
@@ -1283,6 +1401,7 @@ font-family: 'PT Sans', sans-serif; */
     margin: 0px;
     padding: 0px;
     display: flex;
+    justify-content: space-between;
    
     background-color: #F7F3EC;
     margin-bottom: 24px;
@@ -1295,6 +1414,7 @@ font-family: 'PT Sans', sans-serif; */
     font-family: 'Cuprum', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+  
     margin-right: 32px;
 }
 
@@ -1329,28 +1449,61 @@ font-family: 'PT Sans', sans-serif; */
     position: relative;
 }
 
+.sort-icon-wrapper {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    display: flex;
+
+    width: 80px;
+}
+
 .sort-icon-wrapper li {
     margin: 0px;
     padding: 0px;
 }
 
-.sort-icon-wrapper {
+.sort-icon {
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 72px;
+    margin-right: 48px;
 }
 
 .sort-icon label {
     margin: 0px;
     padding: 0px;
 
-    display: inline-block;
-    padding-left: 12px;
-    padding-right: 12px;
+    display: block;
     padding-top: 8px;
     padding-bottom: 8px;
+    margin-right: 12px;
+}
+
+.sort-icon .sort-up::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("img/checkbox-radio/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.sort-icon .sort-down::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("img/checkbox-radio/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
 }
 
 /* Карточка товара */
@@ -1392,6 +1545,10 @@ font-family: 'PT Sans', sans-serif; */
 
 .pagination-list .active {
     color: white;
+}
+
+.pagination-list .line {
+    border: 1px solid #EE3643;
 }
 
 /* Seo_Text */

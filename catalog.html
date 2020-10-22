@@ -114,8 +114,20 @@
             <h2 class="title-filter">Фильтры</h2>
 
             <fieldset class="price-wrapper">
-                
-                
+                <legend>По стоимости</legend>
+                <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price"><input name="min-price" type="text" value="0"><span class="visually-hidden">Цена от</span></label>
+                      <label class="max-price"><input name="max-price" type="text" value="15000"><span class="visually-hidden">Цена до</span></label>
+                    </div>
+                  </div>
             </fieldset>
 
             <fieldset class="producer-wrapper">
@@ -165,13 +177,13 @@
                     <!-- От дешевых к дорогим От дорогих к дешевым -->
             <ul class="sort-icon-wrapper">
                 <li class="sort-icon">
-                    <label>
-                    <input type="radio" class="sort-up visually-hidden" name="sort">112</input>
+                    <label class="sort-up">
+                        <input type="radio" class="visually-hidden" name="sort"></input>
                     </label>
                     </li>
                 <li class="sort-icon">
-                    <label>
-                    <input type="radio" class="visually-hidden" name="sort">333</input>
+                    <label class="sort-down">
+                        <input type="radio" class="visually-hidden" name="sort"></input>
                     </label>
                 </li>
             </ul>
@@ -317,7 +329,7 @@
                 </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="cta-main-rounded"><a class="active">1 <span class="visually-hidden">страница</span></a></li>
+                    <li class="cta-main-rounded line"><a class="active">1 <span class="visually-hidden">страница</span></a></li>
                     <li class="cta-main-rounded filter-outline"><a href="#">2 <span class="visually-hidden">страница</span></a></li>
                     <li class="cta-main-rounded filter-outline"><a href="#">3 <span class="visually-hidden">страница</span></a></li>
                     <li class="cta-main-rounded filter-outline"><a>Следующая <span class="visually-hidden">страница</span></a></li>
