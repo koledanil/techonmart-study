@@ -337,6 +337,61 @@ font-family: 'PT Sans', sans-serif; */
     box-sizing: border-box;
 }
 
+/* Наведение материалы */
+.first-promo-row .material:hover,
+.slide-right-wrap .delivery:hover {
+    background-color: #f6b636;
+}
+
+.first-promo-row .material:active,
+.slide-right-wrap .delivery:active {
+    background-color: #DA9B1E;
+}
+
+.first-promo-row .material:active .title-promo,
+.slide-right-wrap .delivery:active .title-promo {
+    opacity: 0.8;
+}
+
+/* Наведение инструменты */
+.first-promo-row .tools:hover {
+    background-color: #31B2D8;
+}
+
+.first-promo-row .tools:active {
+    background-color: #1887A8;
+}
+
+.first-promo-row .tools:active .title-promo {
+    opacity: 0.8;
+}
+
+/* Техника */
+.first-promo-row .technic:hover {
+    background-color: #D686D2;
+}
+
+.first-promo-row .technic:active {
+    background-color: #B05AAB;
+}
+
+.first-promo-row .technic:active .title-promo {
+    opacity: 0.8;
+}
+
+/* Наведение Техника */
+.slide-right-wrap .sale:hover {
+    background-color: #84CD85;
+}
+
+.slide-right-wrap .sale:active {
+    background-color: #6CAE6D;
+}
+
+.slide-right-wrap .sale:active .title-promo {
+    opacity: 0.8;
+}
+
 .tools {
     background-color: #3BBCE3;
 
@@ -359,7 +414,7 @@ font-family: 'PT Sans', sans-serif; */
     box-sizing: border-box;
 }
 
-.item.sale {
+a.sale {
     background-color: #8ED78F;
     
     background-image: url('img/promo-icn/icon-4.svg');
@@ -477,11 +532,13 @@ font-family: 'PT Sans', sans-serif; */
     background: none;
     border: none;
     cursor: pointer;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
     padding-top:12px;
     padding-bottom:12px;
-    left: 24px;
-    top: 114px;
+    left: 0px;
+    top: 0px;
+    height: 266px;
 }
 
 .slide .slide-right {
@@ -489,11 +546,18 @@ font-family: 'PT Sans', sans-serif; */
     background: none;
     border: none;
     cursor: pointer;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
     padding-top:12px;
     padding-bottom:12px;
-    right: 24px;
-    top: 114px;
+    right: 0px;
+    top: 0px;
+    height: 266px;
+}
+
+.slide .slide-right:hover,
+.slide .slide-left:hover {
+   background-color: rgba(0,0,0,0.56);
 }
 
 .title-slide {
@@ -503,6 +567,8 @@ font-family: 'PT Sans', sans-serif; */
     text-transform: uppercase;
     margin-bottom: 8px;
 }
+
+
 
 .slide p {
     font-family: 'PT Sans', sans-serif;
@@ -637,7 +703,7 @@ font-family: 'PT Sans', sans-serif; */
     margin-bottom: 56px;
 }
 
-.favourite-list .item{
+.favourite-list .item {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -645,15 +711,15 @@ font-family: 'PT Sans', sans-serif; */
     text-align: center;
     box-sizing: border-box;
 
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    /* padding-top: 12px; */
 
     border: 1px solid #D7D7D7;
     width: 220px;
     height: auto;
-    /* height: 332px;    */
 }
+
 
 .card-image-wrap {
     display: flex;
@@ -665,6 +731,9 @@ font-family: 'PT Sans', sans-serif; */
     width: 186px;
     height: 148px;
     padding: 12px;
+
+    margin-top: 12px;
+
 }
 
 .card-image-wrap img{
@@ -679,7 +748,9 @@ font-family: 'PT Sans', sans-serif; */
     flex-basis: auto;
     flex-wrap: wrap;
     text-decoration: none;
-}
+/* 
+    /* background-color: rgba(0,0,0,0.24); */
+} */
 
 .goods-card-title {
     margin-top: 16px;
@@ -1400,6 +1471,19 @@ font-family: 'PT Sans', sans-serif; */
 .producers-list li{
     position: relative;
     padding-left: 32px;
+}
+
+.producers a:hover {
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
+}
+
+
+.producers a:active {
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32);
+}
+
+.producers a:active img{
+   opacity: 0.8;
 }
 
 .producer-wrapper {
