@@ -17,19 +17,21 @@ h1,h2,h3 {
     font-weight: 700;
 }
 
-.h2-title {
-    font-size: 32px;
-}
-
 nav, footer {
     font-family: 'Cuprum', sans-serif;
 }
 
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.h2-title {
+    font-size: 32px;
+}
 
 /* font-family: 'Cuprum', sans-serif;
 font-family: 'PT Sans', sans-serif; */
-
-
 
 .top-menu-wrapper {
     background-color: #32425C;
@@ -67,7 +69,6 @@ font-family: 'PT Sans', sans-serif; */
     list-style: none;
 }
 
-
 .nav-link {
     margin: 0px;
     padding: 0px;
@@ -83,13 +84,15 @@ font-family: 'PT Sans', sans-serif; */
     padding-right: 16px;
 }
 
+
+
 .nav-link:hover {
     background-color: #293449;
 }
 
 .nav-link:active {
-    background-color: #111620;
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #1b2332;
+    color: rgba(255, 255, 255, 0.56);
 }
 
 .nav-link img {
@@ -141,7 +144,6 @@ font-family: 'PT Sans', sans-serif; */
 
 
 /* Стили среднего блока */
-
 .middle-navigation {
     display: flex;
     width: 940px;
@@ -232,10 +234,14 @@ font-family: 'PT Sans', sans-serif; */
     display:flex;
 
     line-height: 42px;
-    padding-left: 24px;
+    padding-left: 16px;
     padding-right: 16px;
     background-color: white;
     color: black;
+}
+
+a.account-link {
+   padding-right: 40px;
 }
 
 .user-navigation a:hover {
@@ -341,11 +347,13 @@ font-family: 'PT Sans', sans-serif; */
 .first-promo-row .material:hover,
 .slide-right-wrap .delivery:hover {
     background-color: #f6b636;
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
 }
 
 .first-promo-row .material:active,
 .slide-right-wrap .delivery:active {
     background-color: #DA9B1E;
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32)
 }
 
 .first-promo-row .material:active .title-promo,
@@ -356,10 +364,12 @@ font-family: 'PT Sans', sans-serif; */
 /* Наведение инструменты */
 .first-promo-row .tools:hover {
     background-color: #31B2D8;
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
 }
 
 .first-promo-row .tools:active {
     background-color: #1887A8;
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32)
 }
 
 .first-promo-row .tools:active .title-promo {
@@ -369,10 +379,12 @@ font-family: 'PT Sans', sans-serif; */
 /* Техника */
 .first-promo-row .technic:hover {
     background-color: #D686D2;
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
 }
 
 .first-promo-row .technic:active {
     background-color: #B05AAB;
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32)
 }
 
 .first-promo-row .technic:active .title-promo {
@@ -505,7 +517,9 @@ a.sale {
 }
 
 .special a {
+    display: block;
     margin: 0px;
+    overflow: hidden;
 }
 
 .special .slide {
@@ -568,8 +582,6 @@ a.sale {
     margin-bottom: 8px;
 }
 
-
-
 .slide p {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
@@ -601,27 +613,39 @@ a.sale {
     box-sizing: border-box;
 }
 
+.special a:hover {
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
+}
+
+.special a:active {
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32);
+}
 
 .cta-main-rounded {
     margin: 0px;
     padding: 0px;
-
-    line-height: 24px;
-    position: relative;
     display: inline-block;
+
     font-family: 'Cuprum', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
     color: white;
+
     text-transform: uppercase;
+    text-decoration: none;
+
+    min-width: 80px;
+
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 32px;
     padding-right: 32px;
+
     background-color: #EE3643;
-    /* border-radius: 2px; */
     border: none;
-    text-decoration-line: none;
+
+    text-align: center;
 
     cursor: pointer;
 }
@@ -634,30 +658,6 @@ a.sale {
     background-color: brown;
     color:rgba(255,255,255, 0.8);
 }
-
-.triangle.cta-main-rounded::after {
-    content: "";
-    position: absolute;
-    right: -40px; 
-    top: 0px;
-    border: 20px solid transparent;
-    border-left: 20px solid #EE3643;
-}
-
-.triangle.cta-main-rounded:hover::after {
-    border-left: 20px solid #CA2C37;
-}
-
-.triangle.cta-main-rounded:active::after {
-    border-left: 20px solid brown;
-}
-
-.triangle {
-    /* border-radius: 2px 0px 0px 2px; */
-    padding-left: 32px;
-    padding-right: 16px;
-}
-
 
 /* Заголовок популярные товары и производители */
 .favourite-goods {
@@ -703,104 +703,167 @@ a.sale {
     margin-bottom: 56px;
 }
 
-.favourite-list .item {
-    margin: 0px;
-    padding: 0px;
+/* Цена товара и уголок */
+.prod-item {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    width: 220px;
     box-sizing: border-box;
-
-    /* padding-left: 16px;
-    padding-right: 16px; */
-    /* padding-top: 12px; */
+    justify-content: space-between;
+    
+    padding-top:24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     border: 1px solid #D7D7D7;
-    width: 220px;
-    height: auto;
 }
 
+.actions {
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+    box-sizing: border-box;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.buy {
+    margin-bottom: 16px;
+}
+
+.bookmark {
+    background: none;
+    color: #EE3643;
+    box-shadow:inset 0px 0px 0px 2px #EE3643;
+}
+
+.bookmark:hover {
+    color: white;
+    box-shadow:inset 0px 0px 0px 2px #CA2C37;
+}
+
+.bookmark:active {
+    color: white;
+    box-sizing: border-box;
+    box-shadow:inset 0px 0px 0px 2px brown;
+}
+
+.prod-item .actions {
+    display: none;
+}
+
+.prod-item:hover .actions {
+    display: flex;
+}
+
+.prod-item:hover {
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
+}
 
 .card-image-wrap {
     display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: auto;
     align-items: center;
 
-    width: 186px;
-    height: 148px;
-    padding: 12px;
-
-    margin-top: 12px;
-
+    width: 172px;
+    height: 140px;
+    margin-bottom: 12px;
 }
 
-.card-image-wrap img{
-    max-width:100%;
-    max-height:100%;
+.goods-info > * > * {
+    margin: 0px;
+    padding: 0px;
 }
 
-
-.card-link{
+.goods-info {
     display: flex;
-    justify-content: center;
     flex-basis: auto;
-    flex-wrap: wrap;
-    text-decoration: none;
-/* 
-    /* background-color: rgba(0,0,0,0.24); */
-} */
-
-.goods-card-title {
-    margin-top: 16px;
-}
-
-.goods-title {
-    margin: 0px;
-    padding: 0px;
-
-    font-family: 'PT Sans', sans-serif;
-    color: black;
-    text-align: center;
-    width: 100%;
-
-    margin-bottom: 8px;
-}
-
-.sale-price {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    color: #A9A9A9;
-    font-weight: 700;
-    text-decoration-line: line-through;
-    text-align: center;
-    margin-bottom: 4px;
-}
-
-.card-price-wrap {
-    display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: space-between;
-
     align-items: center;
-    box-sizing: border-box;
-
-    /* height: 164px; */
-    padding-bottom: 24px;
+    height: 140px;
+    flex-wrap: wrap; 
 }
 
 .product-tag-title {
     display: block;
     width: 100%;
-    color: black;
-    text-align: center;
-    margin: 0px;
+
     font-size: 14px;
-    text-decoration: none;
+    line-height: 20px;
+    color: rgb(101, 101, 101);
+
+    text-align: center;
 }
+
+.goods-title {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+}
+
+.price-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sale-price {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    font-size: 18px;
+    color: #EE3643;
+
+    text-decoration: line-through;
+}
+
+.price-tag {
+    position: relative;
+
+    margin: 0px;
+    padding: 0px;
+
+    line-height: 24px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 12px;
+
+    border: none;
+    text-decoration-line: none;
+
+    background-color: #64A53F;
+}
+
+.triangle.price-tag::after {
+    content: "";
+    position: absolute;
+    right: -40px; 
+    top: 0px;
+    border: 20px solid transparent;
+    border-left: 20px solid #64A53F;
+}
+
 
 /* Список производителей */
 .producers {
@@ -814,7 +877,6 @@ a.sale {
     list-style-type: none;
     margin-bottom: 56px;
 }
-
 
 .producers a {
     margin: 0px;
@@ -831,7 +893,6 @@ a.sale {
 .producers li{
     margin-bottom: 24px;
 }
-
 
 /* Удаляем марджины в последнем ряду */
 .producers li:nth-last-of-type(-n+4) { 
@@ -909,6 +970,7 @@ a.sale {
 }
 
 .slide-list .item {
+    display: block;
     margin: 0px;
     padding: 0px;
     height: 56px;
@@ -921,19 +983,36 @@ a.sale {
     background: #32425C;
 }
 
-.slide-list .item:nth-of-type(1) {
-    border-top: 1px solid white;
-}
-
 .slide-list a {
     margin: 0px;
     padding: 0px;
 
     text-decoration: none;
     color: white;
-    line-height: 56px;
+    padding: 16px;
+    line-height: 56px;    
+}
+
+.hover-benefit:hover {
+    background-color: #293449;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #293449;
+}
+
+.hover-benefit:active {
+    background-color: #1b2332;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #293449;
+
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.item.active {
+    background-color: white;
+    color: black;
     font-weight: 700;
-    
+    border-top: 1px solid white;
+
 }
 
 .slide-list .active-slide-list {
@@ -941,7 +1020,8 @@ a.sale {
     color: #32425C;
 }
 
-.active-slide-list a{
+.active-slide-list a {
+    font-weight: 700;
     color: #32425C;
 }
 
@@ -992,6 +1072,14 @@ a.sale {
     padding: 0px;
 
     margin-bottom: 40px;
+}
+
+.map-link img:hover {
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
+}
+
+.map-link img:active {
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32);
 }
 
 .about-title {
@@ -1160,6 +1248,34 @@ a.sale {
     text-decoration: none;
     color: #FFD180;
 }
+
+.footer-link-gold {
+    color: #FFD180;
+    text-decoration: none;
+}
+
+.footer-link-gold:hover {
+    opacity: .56;
+}
+
+.footer-link-gold:active {
+    opacity: .32;
+}
+
+.footer-link-white {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link-white:hover {
+    opacity: .56;
+}
+
+.footer-link-white:active {
+    opacity: .32;
+}
+
+
 
 
 /* ++++ КАТАЛОГ ++++ */
@@ -1992,6 +2108,15 @@ a.sale {
     background-color: #EE3643;
 }
 
+.btn-close-map:hover, 
+.close-btn:hover {
+    background-color: #D9E3E8;
+}
+
+.btn-close-map:active,
+.close-btn:active {
+    background-color: #D0DBE0;
+}
 
 
 /* Вспомогательные классы */
