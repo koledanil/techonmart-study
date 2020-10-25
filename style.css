@@ -129,6 +129,8 @@ font-family: 'PT Sans', sans-serif; */
     padding-left: 24px;
     padding-right: 24px;
     background-color: #63A63E;
+
+    user-select: none;
 }
 
 .quick-order:hover {
@@ -255,6 +257,7 @@ a.account-link {
 
 .middle-navigation .user-link {
     margin-left: 12px;
+    user-select: none;
 }
 
 .site-navigation-menu-wrapper {
@@ -728,11 +731,9 @@ a.sale {
 
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     
     box-sizing: border-box;
-    padding-left: 48px;
-    padding-right: 48px;
     padding-top: 32px;
     padding-bottom: 32px;
 
