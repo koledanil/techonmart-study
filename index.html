@@ -16,10 +16,12 @@
                 <ul class="additional-navigation">
                     <ul class="add-nav-wrap">
                         <li class="item">
-                            <a href="#" class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
+                            <a class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
                         </li>
                         <li class="item">
-                            <a href="#" class="nav-link search-icon" ><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</a>
+                            <form action="/search" method="post">
+                                <input type="search" name="search" class="search-field" placeholder="Поиск" aria-label="Поиск по сайту" required>
+                            </form>
                         </li>
                     </ul>
                    
@@ -258,12 +260,12 @@
                         </div>
                     </div>
                 </li>
+
             </ul>
         </section>
 
 
         <section class="favourite-goods">
-
             <div class="fav-title-wrapper">
                 <h2 class="h2-title title-goods">Популярные производители</h2>
                 <a href="#" class="cta-main-rounded">Смотреть</a>
@@ -377,7 +379,9 @@
            <div class="footer-color-wrapper">
             <div class="lvl-1">
                 <div class="lvl-1-top-wrapper">
-                <img src="img/main-logo.svg" height="64"alt="Логотип Техномарта" class="image-logo">
+                <a class="main-logo">
+                    <img src="img/main-logo.svg"  height="64"alt="Логотип Техномарта" class="image-logo">
+                </a>
                 <ul class="footer-nav">
                     <li class="item">
                         <a href="#" class="footer-link-white">Компания</a>
@@ -481,11 +485,6 @@
     
 </section>
 
-
-
-    </body>
-</html>
-
 <!-- ///// Окно карта ///// -->
 <section class="overlay-modal visually-hidden">
     <div class="map-wrapper">
@@ -515,4 +514,6 @@
                 <span class="visually-hidden">Закрыть окно</span>
             </button>
     </div> 
+    </body>
+</html>
 </section>
