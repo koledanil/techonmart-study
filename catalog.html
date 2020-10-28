@@ -16,10 +16,12 @@
                 <ul class="additional-navigation">
                     <ul class="add-nav-wrap">
                         <li class="item">
-                            <a href="#" class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
+                            <a class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
                         </li>
                         <li class="item">
-                            <a href="#" class="nav-link search-icon" ><img src="img/search-icn.svg" alt="Иконка поиск" class="search-icn">Поиск</a>
+                            <form action="/search" method="post">
+                                <input type="search" name="search" class="search-field" placeholder="Поиск" aria-label="Поиск по сайту" required>
+                            </form>
                         </li>
                     </ul>
                    
@@ -31,7 +33,7 @@
                             <a href="#" class="nav-link cart-icon cart-icon-full"><img src="img/cart-icn.svg" alt="Иконка корзина">В корзине: 10</a>
                         </li>
                         <li class="item">
-                            <a href="#"  class="quick-order nav-link">Оформить заказ</a>
+                            <a href="#" class="quick-order nav-link">Оформить заказ</a>
                         </li>
                     </ul>
                 </ul>
@@ -54,8 +56,8 @@
                                 <span class="visually-hidden">Выйти из аккаунта</span></button>
                         </li>
                         <ul class="second-link">
-                            <li><a href="" class="link-divider">Мои заказы</a></li>
-                            <li><a href="" class="">Личный кабинет</a></li>
+                            <li class="link-divider"><a href="#">Мои заказы</a></li>
+                            <li><a href="#" class="nav-link">Личный кабинет</a></li>
                         </ul>
                     </ul>
                 </div>
@@ -169,7 +171,7 @@
         <section class="sorted-by">
             <p class="title-filter">Соритровать по</p>
             <ul class="sort-list">
-                <li class="item"><a href="#">цене</a></li>
+                <li class="active"><a>цене</a></li>
                 <li class="item"><a href="#">типу</a></li>
                 <li class="item"><a href="#">функционалу</a></li>
             </ul>
@@ -193,146 +195,254 @@
             <h2 class="visually-hidden">Каталог префораторов</h2>
         
             <ul class="catalog-list">
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/1.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/3.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Перфоратор</p>
+                                <h3 class="goods-title">Makita Professionl 819-22</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">32 000 ₽</p>
+                                <div class="price-tag triangle" href="#">29 220 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/2.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/1.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Дрель</p>
+                                <h3 class="goods-title">Bosh FX322</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">42 000 ₽</p>
+                                <div class="price-tag triangle" href="#">21 4000 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/3.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/2.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Перфоратор</p>
+                                <h3 class="goods-title">Hundai XR-LD 435-29</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">10 000 ₽</p>
+                                <div class="price-tag triangle" href="#">8 220 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/4.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/5.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Дрель</p>
+                                <h3 class="goods-title">Makita Home X-90</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">22 000 ₽</p>
+                                <div class="price-tag triangle" href="#">19 110 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/5.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/4.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Перфоратор</p>
+                                <h3 class="goods-title">Makita EasyDrill XS617</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">24 500 ₽</p>
+                                <div class="price-tag triangle" href="#">18 100 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/6.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/6.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Дрель</p>
+                                <h3 class="goods-title">Steal Professionl EXTRA88-10-20</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">52 200 ₽</p>
+                                <div class="price-tag triangle" href="#">28 900 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/7.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/8.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Перфоратор</p>
+                                <h3 class="goods-title">Bosh BESTXE-13</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">12 000 ₽</p>
+                                <div class="price-tag triangle" href="#">9 220 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/8.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/7.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Перфоратор</p>
+                                <h3 class="goods-title">Makita Special XS890-100</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">32 600 ₽</p>
+                                <div class="price-tag triangle" href="#">20 220 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
 
-                <li class="item catalog-bottom">
-                    <a class="card-link" href="#">
+
+                <li class="prod-item inner-card">
+                    <div class="actions">
+                        <a href="#" class="buy cta-main-rounded">Купить</a>
+                        <a href="#" class="bookmark cta-main-rounded">Сохранить</a>
+                      </div>
+
+                    <div>
                         <div class="card-image-wrap">
-                            <img src="img/catalog-img/9.jpg" alt="Изображение перфоратора Bosh BFG 9000">
+                            <img class="prod-img" src="img/catalog-img/9.jpg" alt="Изображение перфоратора Bosh BFG 9000">
                         </div>
+                        
                        
-                        <div class="card-price-wrap">
-                            <p class="product-tag-title">Перфоратор</p>
-                            <h3 class="goods-title">BOSCH BFG 9000</h3>
-                            <p class="sale-price">32 500₽</p>
-                            <a class="cta-main-rounded triangle" href="#">23 700 ₽</a>
+                        <div class="goods-info">
+                            <div class="goods-card-title">
+                                <p class="product-tag-title">Дрель</p>
+                                <h3 class="goods-title">Makita Professionl UlTRA801-90</h3>
+                            </div>
+
+                            <div class="price-wrap">
+                                <p class="sale-price">32 000 ₽</p>
+                                <div class="price-tag triangle" href="#">29 220 ₽</div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </li>
+
                 </ul>
+
                 <ul class="pagination-list">
-                    <li class="cta-main-rounded line"><a class="active">1 <span class="visually-hidden">страница</span></a></li>
-                    <li class="cta-main-rounded filter-outline"><a href="#">2 <span class="visually-hidden">страница</span></a></li>
-                    <li class="cta-main-rounded filter-outline"><a href="#">3 <span class="visually-hidden">страница</span></a></li>
-                    <li class="cta-main-rounded filter-outline"><a>Следующая <span class="visually-hidden">страница</span></a></li>
+                    <li><span class="pag-button active">1 <span class="visually-hidden">страница</span></span></li>
+                    <li><a class="pag-button" href="#">2 <span class="visually-hidden">страница</span></a></li>
+                    <li><a class="pag-button" href="#">3 <span class="visually-hidden">страница</span></a></li>
+                    <li><a class="pag-button" href="#">Следующая <span class="visually-hidden">страница</span></a></li>
                 </ul>
         </section>
      </div>
@@ -356,22 +466,24 @@
         <div class="footer-color-wrapper">
          <div class="lvl-1">
              <div class="lvl-1-top-wrapper">
-             <img src="img/main-logo.svg" height="64"alt="Логотип Техномарта" class="image-logo">
+             <a href="#" class="main-logo">
+                 <img src="img/main-logo.svg"  height="64"alt="Логотип Техномарта" class="image-logo">
+             </a>
              <ul class="footer-nav">
                  <li class="item">
-                     <a href="#" class="nav-link">Компания</a>
+                     <a href="#" class="footer-link-white">Компания</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Новости</a>
+                     <a href="#" class="footer-link-white">Новости</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Каталог</a>
+                     <a href="#" class="footer-link-white">Каталог</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Доставка</a>
+                     <a href="#" class="footer-link-white">Доставка</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Контакты</a>
+                     <a href="#" class="footer-link-white">Контакты</a>
                  </li>
              </ul>
          </div>
@@ -379,16 +491,16 @@
              <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
              <ul class="footer-special">
                  <li class="item">
-                     <a href="#" class="nav-link">Материалы</a>
+                     <a href="#" class="footer-link-gold">Материалы</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Техника</a>
+                     <a href="#" class="footer-link-gold">Техника</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Инструмент</a>
+                     <a href="#" class="footer-link-gold">Инструмент</a>
                  </li>
                  <li class="item">
-                     <a href="#" class="nav-link">Спецпредложения</a>
+                     <a href="#" class="footer-link-gold">Спецпредложения</a>
                  </li>
              </ul>
          </div>
@@ -408,11 +520,12 @@
                  </ul>
              
                  <ul class="credentials">
-                     <li>Вопросы и комментарии <a href="mailto:koledanil@gmail.com"> koledanil@gmail.com</a>
-                     <li>Разработка и поддержка <a href="#">htmlacademy</a></li>
+                     <li>Вопросы и комментарии <a href="mailto:koledanil@gmail.com" class="footer-link-gold"> koledanil@gmail.com</a>
+                     <li>Разработка и поддержка <a href="#" class="footer-link-gold">htmlacademy</a></li>
                  </ul>
               </div>
          </div>
+         </footer>
          </footer>
 </main>
     </body>
