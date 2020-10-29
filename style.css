@@ -101,7 +101,6 @@ font-family: 'PT Sans', sans-serif; */
 }
 
 
-
 .nav-link:hover {
     background-color: #293449;
 }
@@ -296,7 +295,7 @@ font-family: 'PT Sans', sans-serif; */
 }
 
 a.account-link {
-   padding-right: 16px;
+   padding-right: 40px;
 }
 
 .user-navigation a:hover {
@@ -341,6 +340,24 @@ a.account-link {
 
 .site-navigation li {
     line-height: 52px;
+    position: relative;
+}
+
+.active-menu {
+    color: white;
+    text-decoration: none;
+}
+
+.active-menu::before {
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    background-color: white;
+    opacity: .88;
 }
 
 
@@ -1595,7 +1612,7 @@ a.sale {
 .range-controls .scale {
     height: 4px;
   
-    background: #d7dcde;
+    background: #E1D7C8;
   }
 
 .range-controls .bar {
@@ -1620,6 +1637,16 @@ a.sale {
     border-radius: 50%;
 
     cursor: pointer;
+}
+
+.toggle:hover {
+    background-color: #EE3643;
+    box-shadow: 0 6px 5px 0 #cfcfcf;
+}
+
+.toggle:active {
+    background-color: #EE3643;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
 .price-controls {
@@ -1653,6 +1680,10 @@ a.sale {
 
     margin-bottom: 40px;
   }
+
+.price-controls input:hover {
+    background-color: #EAE3D8;
+}
 
 .max-price::after {
     content: "";
@@ -1688,6 +1719,12 @@ a.sale {
 }
 
 .producers-list {
+    line-height: 40px;
+}
+
+.producers-list label {
+    padding: 8px;
+    cursor: pointer;
     line-height: 40px;
 }
 
@@ -1730,8 +1767,24 @@ a.sale {
     background-repeat: no-repeat;
     bottom: 8px;
     left: 0px;
-    width: 24px;
+    width: 26px;
     height: 24px;
+}
+
+.producers input:checked + label::before{
+    background-image: url('img/checkbox-radio/checkbox-on.svg'); 
+}
+
+.producers-list input:hover + label::before{
+    opacity: 0.64;
+}
+
+.producers-list label:hover {
+    color: #EE3643;
+}
+
+.producers-list label:active {
+    opacity: 0.64;
 }
 
 .power label::before {
@@ -1745,6 +1798,13 @@ a.sale {
     height: 25px;
 }
 
+.power input:checked + label::before{
+    background-image: url('img/checkbox-radio/radio-on.svg'); 
+}
+
+
+
+
 .producers-list li:last-child {
     margin-bottom: 32px;
 }
@@ -1755,11 +1815,37 @@ a.sale {
     text-transform: uppercase;
 }
 
-.filter-outline  {
+.filter-button {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
     background-color: white;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+
     color: inherit;
     border: 1px solid #E5E5E5;
+
+    flex-wrap: wrap;
+    
+    text-decoration: none;
+    color: black;
+
+    user-select: none;
 }
+
+.filter-button:hover  {
+    background-color: #D9E3E8;
+    border: 1px solid #D9E3E8;
+}
+
+.filter-button:active  {
+    background-color: #D0DBE0;
+    color: rgba(0,0,0,0.64);
+}
+
 
 /* Сортировка */
 .sorted-by {
@@ -1977,6 +2063,8 @@ li.inner-card:nth-child(3n) {
     
     text-decoration: none;
     color: black;
+
+    user-select: none;
 }
 
 .pag-button.active {
@@ -2186,6 +2274,11 @@ li.inner-card:nth-child(3n) {
     resize: vertical;
     width: 460px;
     min-height: 180px;
+}
+
+input.message-field:hover,
+.message-field:hover {
+    border: 1px solid  #EE3643;
 }
 
 

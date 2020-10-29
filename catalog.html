@@ -16,7 +16,7 @@
                 <ul class="additional-navigation">
                     <ul class="add-nav-wrap">
                         <li class="item">
-                            <a class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
+                            <a href="index.html" class="main-logo"><img src="img/main-logo.svg" alt="Логотип Техномарта" class="image-logo"></a>
                         </li>
                         <li class="item">
                             <form action="/search" method="post">
@@ -50,7 +50,7 @@
                     </ul>
                     <ul class="user-navigation catalog-wrapper">
                         <li>
-                            <a href="#" class="account-link nav-link nav-link-user"><img src="img/icon-user.svg" alt="Иконка пользователя">Жорж Милославский</a>
+                            <a href="#" class="nav-link nav-link-user"><img src="img/icon-user.svg" alt="Иконка пользователя">Жорж Милославский</a>
                             <button class="logout-btn">
                                 <img src="img/logout-icn.svg" alt="Иконка выйти из аккаунта">
                                 <span class="visually-hidden">Выйти из аккаунта</span></button>
@@ -70,7 +70,7 @@
                             <a href="#" class="nav-link">Компания</a>
                             </li>
                         <li class="item">
-                            <a href="catalog.html" class="nav-link">Материалы, иструменты и техника</a>
+                            <a href="catalog.html" class="active-menu">Материалы, иструменты и техника</a>
                         </li>
                         <li class="item">
                             <a href="#" class="nav-link">Новости</a>
@@ -134,18 +134,25 @@
 
             <fieldset class="producer-wrapper">
                  <legend>По производителю</legend>
-                 <ul class="producers-list">
+                 <ul class="producers-list producers">
                      <li>
-                         <label><input type="checkbox" class="visually-hidden" name="Bosh">Bosh (2)</label>
+                        <input id="bosh-prod" type="checkbox" class="visually-hidden" name="Bosh" checked>
+                        <label for="bosh-prod">Bosh (2)</label>
                      </li>
+
                      <li>
-                         <label><input type="checkbox" class="visually-hidden" name="Interskol" checked>Интерскол (15)</label>
+                        <input id="inter-prod" type="checkbox" class="visually-hidden" name="Interskol" checked> 
+                        <label for="inter-prod">Интерскол (15)</label> 
                      </li>
+
                      <li>
-                         <label><input type="checkbox" class="visually-hidden" name="Makita">Makita (8)</label>
+                        <input id="makita-prod" type="checkbox" class="visually-hidden" name="Makita">            
+                        <label for="makita-prod">Makita (8)</label>            
                      </li>
+
                      <li>
-                         <label><input type="checkbox" class="visually-hidden" name="Hitachi" checked>Hitachi (15)</label>
+                         <input id="hitachi-prod" type="checkbox" class="visually-hidden" name="Hitachi" checked>
+                         <label for="hitachi-prod">Hitachi (15)</label>
                      </li>
                  </ul>
              </fieldset>
@@ -154,15 +161,17 @@
                 <legend>По типу питания</legend>
                 <ul class="producers-list power">
                     <li>
-                        <label><input type="radio" class="visually-hidden" name="power">Сетевые</label>
+                        <input id="power-type" type="radio" class="visually-hidden" name="power">
+                        <label for="power-type">Сетевые</label>
                     </li>
                     <li>
-                        <label><input type="radio" class="visually-hidden" name="power" checked>Аккумуляторные</label>
+                        <input id="acc-type" type="radio" class="visually-hidden" name="power" checked>
+                        <label for="acc-type">Аккумуляторные</label>
                     </li>
                 </ul>
             </fieldset>
 
-            <button class="cta-main-rounded filter-outline" type="submit">Показать</button>
+            <button class="filter-button" type="submit">Показать</button>
          </form>
      </section>
 
@@ -466,7 +475,7 @@
         <div class="footer-color-wrapper">
          <div class="lvl-1">
              <div class="lvl-1-top-wrapper">
-             <a href="#" class="main-logo">
+             <a href="index.html" class="main-logo">
                  <img src="img/main-logo.svg"  height="64"alt="Логотип Техномарта" class="image-logo">
              </a>
              <ul class="footer-nav">

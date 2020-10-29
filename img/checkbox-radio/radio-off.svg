@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>checkbox-off copy</title>
-    <g id="checkbox-off-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" stroke="#C5C5C5" stroke-width="2" cx="11.5" cy="11.5" r="10.5"></circle>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>radio-on</title>
+    <g id="radio-on" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#C5C5C5" fill-rule="nonzero" id="Shape">
+            <path d="M23,12.5 C23,18.2898235 18.2898235,23 12.5,23 C6.71017647,23 2,18.2898235 2,12.5 C2,6.71017647 6.71017647,2 12.5,2 C18.2898235,2 23,6.71017647 23,12.5 Z M12.5,0 C5.597,0 0,5.597 0,12.5 C0,19.403 5.597,25 12.5,25 C19.403,25 25,19.403 25,12.5 C25,5.597 19.403,0 12.5,0 Z"></path>
+        </g>
     </g>
 </svg>
