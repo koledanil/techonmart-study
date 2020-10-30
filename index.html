@@ -106,24 +106,43 @@
                 
                 <ul class="second-promo-row">
                     <ul class="special">
-                        <li class="slide">
+                        <li id="1" class="slide">
                             <a href="#">
                                 <div class="title-slide-wrap">
-                                    <h3 class="title-slide">Дрели</h3>
+                                    <h3 class="title-slide">Дрели 1</h3>
                                     <p>Соседям на радость!</p>
                                 </div>
-                                <button type="button" class="slide-left">
-                                    <span class="visually-hidden">Предыдущий слайд</span>
-                                    <img src="img/left-icn.svg" alt="Предыдущий слайд">
-                                </button>
-
-                                <button type="button" class="slide-right">
-                                    <span class="visually-hidden">следующий слайд</span>
-                                    <img src="img/right-icn.svg" alt="Следующий слайд">
-                                </button>
+                        
                                 <img height="266px" src="img/drl-prm.jpg" class="slide-img"alt="Промо-изображение дрели">
                             </a>
+                            <button type="button" class="slide-left">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                                <img src="img/left-icn.svg" alt="Предыдущий слайд">
+                            </button>
 
+                            <button type="button" class="slide-right">
+                                <span class="visually-hidden">следующий слайд</span>
+                                <img src="img/right-icn.svg" alt="Следующий слайд">
+                            </button>
+                        </li>
+
+                        <li id="2" class="slide hidden">
+                            <a href="#">
+                                <div class="title-slide-wrap">
+                                    <h3 class="title-slide">Дрели 2</h3>
+                                    <p>Соседям на радость!</p>
+                                </div>
+                            </a>
+                            <button type="button" class="slide-left">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                                <img src="img/left-icn.svg" alt="Предыдущий слайд">
+                            </button>
+
+                            <button type="button" class="slide-right">
+                                <span class="visually-hidden">следующий слайд</span>
+                                <img src="img/right-icn.svg" alt="Следующий слайд">
+                            </button>
+                            <img height="266px" src="img/prf-prm.jpg" class="slide-img"alt="Промо-изображение дрели">
                         </li>
                     </ul>
 
@@ -333,21 +352,33 @@
 
                 <div class="level-2-service-wrapper">
                     <ul class="slide-list">
-                        <li class="active-slide-lis1t">
-                            <a class="item active">Доставка</a>
+                        <li>
+                            <a href="#" id="0" class="item active">Доставка</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="item hover-benefit">Гарантия</a>
+                        <li>
+                            <a href="#" id="1" class="item hover-benefit">Гарантия</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="item hover-benefit">Кредит</a>
+                        <li>
+                            <a href="#" id="2" class="item hover-benefit">Кредит</a>
                         </li>
                     </ul>
-                    <div class="deliver">
-                        <h3 class="services-title h2-title">Быстро и аккуратно</h3>
-                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                    </div>
 
+                    <ul class="slide-text">
+                        <li id="0" class="text-slide-deliver">
+                            <h3 class="services-title h2-title">Быстро и аккуратно</h3>
+                            <p class="image-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                        </li>
+    
+                        <li id="1" class="deliver text-slide-credit hidden">
+                            <h3 class="services-title h2-title">Расширенная гарантия</h3>
+                            <p class="image-warranty">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                        </li>
+                        
+                        <li id="2" class="deliver text-slide-warranty hidden">
+                            <h3 class="services-title h2-title">Кредит на выгодных условиях</h3>
+                            <p class="image-credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -361,7 +392,6 @@
                     <li class="item">Деловые линии</li>
                     <li class="item">Автотрейдинг</li>
                     <li class="item">ЖелДорЭкспедиция</li>
-                    
                 </ul>
                 <button class="cta-main-rounded" type="button">ЧИТАТЬ</button>
             </div>
@@ -370,7 +400,7 @@
                 <p>Вы можете забрать товар сами,<br>
                     заехав в наш офис</p>
                 <a href="" class="map-link"><img src="img/map.jpg" width="300" height="158" alt="Карта проезда до Техномарта: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-                <a href="#" class="cta-main-rounded">Написать нам</a>
+                <a href="#" class="cta-main-rounded pop-write-btn">Написать нам</a>
             </div>
         </section>
 
@@ -444,7 +474,7 @@
 
 
     <!-- ///// Окно сообщений ///// -->
-<section class="overlay-modal visually-hidden">
+<section class="pop-write overlay-modal hidden">
     <div class="popup-msg">
         <div class="wrapper">
             <div class="inputs-wrapper">
@@ -478,14 +508,13 @@
                 <div class="send-btn">
                     <button type="button" class="cta-main-rounded">Отправить</button>
                 </div>
-                <div class="overlay-msg"asdasasdasdasdasd dasdasdasd dasdasdasd add></div>
         </div>
     </div>
     
 </section>
 
 <!-- ///// Окно карта ///// -->
-<section class="overlay-modal visually-hidden">
+<section class="pop-map overlay-modal hidden">
     <div class="map-wrapper">
         <div class="map">
             <img src="img/map.png" alt="Карта проезда">
@@ -507,12 +536,17 @@
                         <td>с 10:00 до 18:00</td>
                     </tr>
                 </table>
-                <a class="cta-main-rounded">Написать нам</a>
             </div>
             <button class="btn-close-map" type="button">
                 <span class="visually-hidden">Закрыть окно</span>
             </button>
     </div> 
+
+<script src="js/map-popup.js"></script>
+<script src="js/write-popup.js"></script>
+<script src="js/benefit-slider.js"></script>
+<script src="js/hero-slider.js"></script>
+
     </body>
 </html>
 </section>

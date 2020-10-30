@@ -1000,8 +1000,54 @@ a.sale {
 
     flex-direction: column;
     margin: auto;
+}
+
+
+.slide-text p {
+    padding: 0px;
+    margin: 0px;
+    
+    padding-right: 230px;
+}
+
+.image-delivery::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 428px;
+    height: 201px;
 
     background-image: url('img/services/deliver.png');
+    background-repeat: no-repeat;
+    background-position: bottom -100px right 0px;
+}
+
+.image-warranty::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 428px;
+    height: 201px;
+
+    background-image: url('img/services/quality.png');
+    background-repeat: no-repeat;
+    background-position: bottom -100px right 0px;
+}
+
+.image-credit::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 428px;
+    height: 201px;
+
+    background-image: url('img/services/credit.png');
     background-repeat: no-repeat;
     background-position: bottom -100px right 0px;
 }
@@ -1010,6 +1056,8 @@ a.sale {
     display: flex;
     width: 940px;
     position: relative;
+
+    justify-content: flex-start;
 
     margin-bottom: 96px;
     margin-top: 96px;
@@ -1028,7 +1076,8 @@ a.sale {
     padding: 0px;
     list-style-type: none;
 
-    width: 468px;   
+    width: 240px;   
+    margin-right: 88px;
 }
 
 .slide-list::after {
@@ -1036,23 +1085,23 @@ a.sale {
     position: absolute;
 
     top: -52px;
-    left: 215px;
+    left: 252px;
     width: 10px;
     height: 280px;
 
     background-image: url('img/shadow-line.png');
 }
 
-.deliver {
-    padding-left: 80px;
-    
+.slide-text {
+    width: 700px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
-.deliver p {
-    padding: 0px;
+.slide-text li {
     margin: 0px;
-    
-    padding-right: 230px;
+    padding: 0px;
 }
 
 .slide-list .item {
@@ -1098,7 +1147,8 @@ a.sale {
     color: black;
     font-weight: 700;
     border-top: 1px solid white;
-
+    border-bottom: 1px solid white;
+    cursor: default;
 }
 
 .slide-list .active-slide-list {
@@ -2308,10 +2358,6 @@ input.message-field:hover,
     z-index: 9999;
 }
 
-.work-hours table {
-    margin-bottom: 24px;
-}
-
 .work-hours a {
     text-align: center;
     width: 136px;
@@ -2419,4 +2465,8 @@ input.message-field:hover,
     background:rgba(0,0,0 ,0.64 );
     height:100%;
     width:100%;
+  }
+
+  .hidden {
+      display: none;
   }
