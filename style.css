@@ -402,6 +402,7 @@ a.account-link {
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 .first-promo-row {
@@ -581,22 +582,13 @@ a.sale {
 
     list-style-type: none;
     color: black;
+    position: relative;
 }
 
 .slide-img {
     margin: 0px;
     padding: 0px;
     background-color: #32425C;
-}
-
-.special a {
-    display: block;
-    margin: 0px;
-    overflow: hidden;
-}
-
-.special .slide {
-    position: relative;
 }
 
 .title-slide-wrap {
@@ -614,8 +606,9 @@ a.sale {
     left: 24px;
 }
 
-.slide .slide-left {
+.slide-left {
     position: absolute;
+    z-index: 999;
     background: none;
     border: none;
     cursor: pointer;
@@ -623,13 +616,20 @@ a.sale {
     padding-right: 12px;
     padding-top:12px;
     padding-bottom:12px;
-    left: 0px;
+    right: 894px;
     top: 0px;
+    width: 48px;
     height: 266px;
+
+    background-image: url('img/left-icn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
 }
 
-.slide .slide-right {
+.slide-right {
     position: absolute;
+    z-index: 999;
     background: none;
     border: none;
     cursor: pointer;
@@ -637,14 +637,25 @@ a.sale {
     padding-right: 12px;
     padding-top:12px;
     padding-bottom:12px;
-    right: 0px;
+    right: 320px;
     top: 0px;
     height: 266px;
+    width: 48px;
+
+    background-image: url('img/right-icn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
 }
 
-.slide .slide-right:hover,
-.slide .slide-left:hover {
-   background-color: rgba(0,0,0,0.56);
+.slide-right:hover,
+.slide-left:hover {
+   background-color: rgba(0,0,0,0.32);
+}
+
+.slide-right:hover, 
+.slide-left:hover {
+   background-color: rgba(0,0,0,0.32);
 }
 
 .title-slide {
@@ -686,12 +697,20 @@ a.sale {
     box-sizing: border-box;
 }
 
-.special a:hover {
-    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.32);
+.special img:hover {
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.40);
 }
 
-.special a:active {
-    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.32);
+.special a:hover img{
+    box-shadow: 0 10px 25px 0 rgba(41,52,73,0.40);
+}
+
+.special img:active {
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.56);
+}
+
+.special a:active img{
+    box-shadow: 0 4px 10px 0 rgba(41,52,73,0.64);
 }
 
 .cta-main-rounded {
